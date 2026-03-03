@@ -200,6 +200,19 @@ body.lang-de .game-title { color: var(--de-accent); }
 }
 
 @media (min-width: 480px) {
+    .word-card {
+        aspect-ratio: 1 / 0.7;
+        font-size: 0.95rem;
+        padding: 8px 6px;
+        border-radius: 10px;
+    }
+    
+    #game-grid {
+        gap: 8px;
+    }
+}
+
+@media (min-width: 480px) {
     .word-card { font-size: 0.95rem; }
 }
 
@@ -237,23 +250,29 @@ body.lang-de .word-card.selected { background: var(--de-accent) !important; }
 
 /* Buttons */
 .btn-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     margin-top: 8px;
+}
+
+@media (min-width: 640px) {
+    .btn-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .btn {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 0.85rem;
-    padding: 10px 20px;
+    padding: 10px 8px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
     transition: all 0.2s;
     letter-spacing: 0.02em;
+    width: 100%;
 }
 
 .btn:disabled { opacity: 0.4; cursor: not-allowed; }
