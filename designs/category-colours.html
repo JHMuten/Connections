@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Colors - Language Connections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #f8f7f4;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 2.5rem;
+            color: #1a1a2e;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .language-section {
+            margin-bottom: 50px;
+        }
+
+        .language-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .language-title.french { color: #4361ee; border-color: #4361ee; }
+        .language-title.spanish { color: #f77f00; border-color: #f77f00; }
+        .language-title.german { color: #dd0000; border-color: #dd0000; }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .category-card {
+            border-radius: 12px;
+            padding: 14px 16px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .cat-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.75;
+            margin-bottom: 6px;
+        }
+
+        .cat-words {
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .color-info {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 0.7rem;
+            font-family: monospace;
+            opacity: 0.8;
+        }
+
+        .super-group-header {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #374151;
+            margin: 24px 0 12px 0;
+            padding-left: 8px;
+            border-left: 4px solid #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Category Colors</h1>
+        <p class="subtitle">Improved color scheme with consistent super-group colors across all languages</p>
+        
+        <div style="max-width: 800px; margin: 0 auto 40px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h3 style="margin-bottom: 12px; color: #1a1a2e;">Color System Logic:</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; font-size: 0.85rem;">
+                <div><strong style="color: #2563eb;">🔵 Blues:</strong> Conjugated Verbs</div>
+                <div><strong style="color: #7c3aed;">🟣 Purples:</strong> Types of Verbs & Media</div>
+                <div><strong style="color: #64748b;">⚫ Grays:</strong> Grammar & Structure</div>
+                <div><strong style="color: #db2777;">🩷 Pinks:</strong> Identity & Descriptions</div>
+                <div><strong style="color: #ea580c;">🟠 Oranges:</strong> Lifestyle & Health</div>
+                <div><strong style="color: #16a34a;">🟢 Greens:</strong> Travel & Environment</div>
+                <div><strong style="color: #eab308;">🟡 Yellows:</strong> Time & Weather</div>
+                <div><strong style="color: #9333ea;">🟣 Deep Purple:</strong> Customs & Faith</div>
+            </div>
+        </div>
+
+        <!-- FRENCH -->
+        <div class="language-section">
+            <h2 class="language-title french">🇫🇷 French</h2>
+
+            <div class="super-group-header">Conjugated Verbs</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #2563eb; color: #ffffff;">
+                    <div class="cat-label">Parts of 'avoir'</div>
+                    <div class="cat-words">j'ai · tu as · il a · elle a</div>
+                    <div class="color-info">bg: #2563eb · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #fde68a; color: #1a1a1a;">
+                    <div class="cat-label">Parts of 'être'</div>
+                    <div class="cat-words">je suis · tu es · il est · elle est</div>
+                    <div class="color-info">bg: #fde68a · text: #1a1a1a</div>
+                </div>
+                <div class="category-card" style="background: #a78bfa; color: #ffffff;">
+                    <div class="cat-label">Parts of 'aller'</div>
+                    <div class="cat-words">je vais · tu vas · il va · elle va</div>
+                    <div class="color-info">bg: #a78bfa · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #f97316; color: #ffffff;">
+                    <div class="cat-label">Parts of 'faire'</div>
+                    <div class="cat-words">je fais · tu fais · il fait · elle fait</div>
+                    <div class="color-info">bg: #f97316 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #0d9488; color: #ffffff;">
+                    <div class="cat-label">Parts of 'pouvoir'</div>
+                    <div class="cat-words">je peux · tu peux · il peut · elle peut</div>
+                    <div class="color-info">bg: #0d9488 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #d97706; color: #ffffff;">
+                    <div class="cat-label">Parts of 'vouloir'</div>
+                    <div class="cat-words">je veux · tu veux · il veut · elle veut</div>
+                    <div class="color-info">bg: #d97706 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Types of Verbs</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #3b82f6; color: #ffffff;">
+                    <div class="cat-label">Infinitives (-er)</div>
+                    <div class="cat-words">aider · aimer · chanter · danser</div>
+                    <div class="color-info">bg: #3b82f6 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ef4444; color: #ffffff;">
+                    <div class="cat-label">Infinitives (-ir / -re)</div>
+                    <div class="cat-words">choisir · finir · grandir · partir</div>
+                    <div class="color-info">bg: #ef4444 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #fbbf24; color: #1a1a1a;">
+                    <div class="cat-label">Past Participles (-é)</div>
+                    <div class="cat-words">acheté · aidé · aimé · arrivé</div>
+                    <div class="color-info">bg: #fbbf24 · text: #1a1a1a</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Grammar & Structure</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #475569; color: #ffffff;">
+                    <div class="cat-label">Negative Words</div>
+                    <div class="cat-words">jamais · pas · personne · plus</div>
+                    <div class="color-info">bg: #475569 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #64748b; color: #ffffff;">
+                    <div class="cat-label">Interrogatives</div>
+                    <div class="cat-words">combien · comment · où · pourquoi</div>
+                    <div class="color-info">bg: #64748b · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #94a3b8; color: #1e293b;">
+                    <div class="cat-label">Conjunctions</div>
+                    <div class="cat-words">car · cependant · comme · donc</div>
+                    <div class="color-info">bg: #94a3b8 · text: #1e293b</div>
+                </div>
+                <div class="category-card" style="background: #cbd5e1; color: #1e293b;">
+                    <div class="cat-label">Prepositions</div>
+                    <div class="cat-words">à · après · avant · avec</div>
+                    <div class="color-info">bg: #cbd5e1 · text: #1e293b</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Identity & Descriptions</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #be185d; color: #ffffff;">
+                    <div class="cat-label">Character Adjectives</div>
+                    <div class="cat-words">bavard · calme · fier · fort</div>
+                    <div class="color-info">bg: #be185d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #db2777; color: #ffffff;">
+                    <div class="cat-label">Appearance Adjectives</div>
+                    <div class="cat-words">beau · belle · blond · brun</div>
+                    <div class="color-info">bg: #db2777 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ec4899; color: #ffffff;">
+                    <div class="cat-label">Colours</div>
+                    <div class="cat-words">blanc · blanche · bleu · gris</div>
+                    <div class="color-info">bg: #ec4899 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #f472b6; color: #1e293b;">
+                    <div class="cat-label">Feeling Adjectives</div>
+                    <div class="cat-words">content · désolé · fatigué · heureux</div>
+                    <div class="color-info">bg: #f472b6 · text: #1e293b</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Lifestyle & Health</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #c2410c; color: #ffffff;">
+                    <div class="cat-label">Food</div>
+                    <div class="cat-words">fromage · fruit · gâteau · légume</div>
+                    <div class="color-info">bg: #c2410c · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ea580c; color: #ffffff;">
+                    <div class="cat-label">Drinks</div>
+                    <div class="cat-words">alcool · boisson · café · eau</div>
+                    <div class="color-info">bg: #ea580c · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #f97316; color: #ffffff;">
+                    <div class="cat-label">Healthy Lifestyle</div>
+                    <div class="cat-words">énergie · exercice · forme · habitude</div>
+                    <div class="color-info">bg: #f97316 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Media, Leisure & Sport</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #7e22ce; color: #ffffff;">
+                    <div class="cat-label">Technology & Devices</div>
+                    <div class="cat-words">appareil · écran · ordinateur · portable</div>
+                    <div class="color-info">bg: #7e22ce · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #9333ea; color: #ffffff;">
+                    <div class="cat-label">Media Nouns</div>
+                    <div class="cat-words">dessin animé · documentaire · émission · film</div>
+                    <div class="color-info">bg: #9333ea · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #a855f7; color: #ffffff;">
+                    <div class="cat-label">Sports</div>
+                    <div class="cat-words">athlétisme · basket · football · gymnastique</div>
+                    <div class="color-info">bg: #a855f7 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Travel & Environment</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #15803d; color: #ffffff;">
+                    <div class="cat-label">Places in Town</div>
+                    <div class="cat-words">banque · bibliothèque · boulangerie · cinéma</div>
+                    <div class="color-info">bg: #15803d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #16a34a; color: #ffffff;">
+                    <div class="cat-label">Transport</div>
+                    <div class="cat-words">avion · bateau · bus · métro</div>
+                    <div class="color-info">bg: #16a34a · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #22c55e; color: #1e293b;">
+                    <div class="cat-label">Environment</div>
+                    <div class="cat-words">arbre · climat · déchets · environnement</div>
+                    <div class="color-info">bg: #22c55e · text: #1e293b</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPANISH -->
+        <div class="language-section">
+            <h2 class="language-title spanish">🇪🇸 Spanish</h2>
+
+            <div class="super-group-header">Verbs</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #1e40af; color: #ffffff;">
+                    <div class="cat-label">Parts of 'ser'</div>
+                    <div class="cat-words">soy · eres · es · somos</div>
+                    <div class="color-info">bg: #1e40af · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #2563eb; color: #ffffff;">
+                    <div class="cat-label">Parts of 'estar'</div>
+                    <div class="cat-words">estoy · estás · está · estamos</div>
+                    <div class="color-info">bg: #2563eb · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #6b21a8; color: #ffffff;">
+                    <div class="cat-label">Infinitives (-ar)</div>
+                    <div class="cat-words">ayudar · bailar · buscar · cantar</div>
+                    <div class="color-info">bg: #6b21a8 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Grammar & Structure</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #475569; color: #ffffff;">
+                    <div class="cat-label">Modal Expressions</div>
+                    <div class="cat-words">se debe · se puede · se debería · hay que</div>
+                    <div class="color-info">bg: #475569 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #64748b; color: #ffffff;">
+                    <div class="cat-label">Negative Words</div>
+                    <div class="cat-words">nunca · no · nadie · nada</div>
+                    <div class="color-info">bg: #64748b · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Identity & Descriptions</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #be185d; color: #ffffff;">
+                    <div class="cat-label">Character Adjectives</div>
+                    <div class="cat-words">alegre · ambicioso · comprensivo · gracioso</div>
+                    <div class="color-info">bg: #be185d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #db2777; color: #ffffff;">
+                    <div class="cat-label">Appearance Adjectives</div>
+                    <div class="cat-words">alto · bajo · bonito · brun</div>
+                    <div class="color-info">bg: #db2777 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Lifestyle & Health</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #c2410c; color: #ffffff;">
+                    <div class="cat-label">Food</div>
+                    <div class="cat-words">arroz · bocadillo · carne · ensalada</div>
+                    <div class="color-info">bg: #c2410c · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ea580c; color: #ffffff;">
+                    <div class="cat-label">Drinks</div>
+                    <div class="cat-words">agua · bebida · café · copa</div>
+                    <div class="color-info">bg: #ea580c · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Media, Leisure & Sport</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #7e22ce; color: #ffffff;">
+                    <div class="cat-label">Technology & Devices</div>
+                    <div class="cat-words">app · blog · cámara · dispositivo</div>
+                    <div class="color-info">bg: #7e22ce · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #a855f7; color: #ffffff;">
+                    <div class="cat-label">Sports</div>
+                    <div class="cat-words">atletismo · baloncesto · ciclismo · fútbol</div>
+                    <div class="color-info">bg: #a855f7 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Travel & Environment</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #15803d; color: #ffffff;">
+                    <div class="cat-label">Places in Town</div>
+                    <div class="cat-words">aeropuerto · banco · biblioteca · castillo</div>
+                    <div class="color-info">bg: #15803d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #16a34a; color: #ffffff;">
+                    <div class="cat-label">Transport</div>
+                    <div class="cat-words">autobús · avión · barco · bicicleta</div>
+                    <div class="color-info">bg: #16a34a · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Time & Weather</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #ca8a04; color: #ffffff;">
+                    <div class="cat-label">Adverbs of Time</div>
+                    <div class="cat-words">ahora · antes · después · hoy</div>
+                    <div class="color-info">bg: #ca8a04 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #eab308; color: #1e293b;">
+                    <div class="cat-label">Weather</div>
+                    <div class="cat-words">calor · frío · lluvia · nieve</div>
+                    <div class="color-info">bg: #eab308 · text: #1e293b</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GERMAN -->
+        <div class="language-section">
+            <h2 class="language-title german">🇩🇪 German</h2>
+
+            <div class="super-group-header">Verbs</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #1e40af; color: #ffffff;">
+                    <div class="cat-label">Parts of 'sein'</div>
+                    <div class="cat-words">ich bin · du bist · er ist · sie ist</div>
+                    <div class="color-info">bg: #1e40af · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #2563eb; color: #ffffff;">
+                    <div class="cat-label">Parts of 'haben'</div>
+                    <div class="cat-words">ich habe · du hast · er hat · sie hat</div>
+                    <div class="color-info">bg: #2563eb · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #6b21a8; color: #ffffff;">
+                    <div class="cat-label">Infinitives</div>
+                    <div class="cat-words">arbeiten · bauen · besuchen · bezahlen</div>
+                    <div class="color-info">bg: #6b21a8 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Grammar & Structure</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #475569; color: #ffffff;">
+                    <div class="cat-label">Modal Verbs</div>
+                    <div class="cat-words">ich darf · ich kann · ich muss · ich soll</div>
+                    <div class="color-info">bg: #475569 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #64748b; color: #ffffff;">
+                    <div class="cat-label">Question Words</div>
+                    <div class="cat-words">wann · warum · was · welche</div>
+                    <div class="color-info">bg: #64748b · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Identity & Descriptions</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #be185d; color: #ffffff;">
+                    <div class="cat-label">Character Adjectives</div>
+                    <div class="cat-words">ehrlich · eifersüchtig · faul · freundlich</div>
+                    <div class="color-info">bg: #be185d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ec4899; color: #ffffff;">
+                    <div class="cat-label">Colours</div>
+                    <div class="cat-words">blau · braun · gelb · grau</div>
+                    <div class="color-info">bg: #ec4899 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Lifestyle & Health</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #c2410c; color: #ffffff;">
+                    <div class="cat-label">Food</div>
+                    <div class="cat-words">Brot · Ei · Fleisch · Fisch</div>
+                    <div class="color-info">bg: #c2410c · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #ea580c; color: #ffffff;">
+                    <div class="cat-label">Drinks</div>
+                    <div class="cat-words">Bier · Cola · Kaffee · Milch</div>
+                    <div class="color-info">bg: #ea580c · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Media, Leisure & Sport</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #7e22ce; color: #ffffff;">
+                    <div class="cat-label">Technology & Devices</div>
+                    <div class="cat-words">App · Blog · Computer · E-Mail</div>
+                    <div class="color-info">bg: #7e22ce · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #a855f7; color: #ffffff;">
+                    <div class="cat-label">Sports</div>
+                    <div class="cat-words">Basketball · Fußball · Leichtathletik · Radfahren</div>
+                    <div class="color-info">bg: #a855f7 · text: #ffffff</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Travel & Environment</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #15803d; color: #ffffff;">
+                    <div class="cat-label">Places in Town</div>
+                    <div class="cat-words">Bahnhof · Bank · Bäckerei · Café</div>
+                    <div class="color-info">bg: #15803d · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #22c55e; color: #1e293b;">
+                    <div class="cat-label">Environment</div>
+                    <div class="cat-words">Baum · Dürre · Energie · Erde</div>
+                    <div class="color-info">bg: #22c55e · text: #1e293b</div>
+                </div>
+            </div>
+
+            <div class="super-group-header">Time & Weather</div>
+            <div class="categories-grid">
+                <div class="category-card" style="background: #ca8a04; color: #ffffff;">
+                    <div class="cat-label">Adverbs of Time</div>
+                    <div class="cat-words">bald · bereits · damals · dann</div>
+                    <div class="color-info">bg: #ca8a04 · text: #ffffff</div>
+                </div>
+                <div class="category-card" style="background: #eab308; color: #1e293b;">
+                    <div class="cat-label">Weather</div>
+                    <div class="cat-words">heiß · kalt · Regen · Schnee</div>
+                    <div class="color-info">bg: #eab308 · text: #1e293b</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
